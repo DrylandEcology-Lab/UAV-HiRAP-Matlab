@@ -1,0 +1,130 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration build-checksum="211213109" file="D:\OneDrive\Program\MATLAB\林科院\matlab files\Cimary\Cimary.prj" location="D:\OneDrive\Program\MATLAB\林科院\matlab files\Cimary" name="Cimary" preferred-package-location="D:\我的软件\Cimary\for_redistribution" preferred-package-type="package.type.exe" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>UAV_HPIAP</param.appname>
+    <param.icon>${PROJECT_ROOT}\Cimary_resources\icon.ico</param.icon>
+    <param.icons>
+      <file>${PROJECT_ROOT}\Cimary_resources\icon_48.png</file>
+      <file>${PROJECT_ROOT}\Cimary_resources\icon_32.png</file>
+      <file>${PROJECT_ROOT}\Cimary_resources\icon_24.png</file>
+      <file>${PROJECT_ROOT}\Cimary_resources\icon_16.png</file>
+    </param.icons>
+    <param.version>1.0</param.version>
+    <param.authnamewatermark>Howcanoe Wang</param.authnamewatermark>
+    <param.email>howcanoewang@gmail.com</param.email>
+    <param.company>Chinese Academy of Forestry</param.company>
+    <param.summary>无人机高精度影像分析平台1.0
+Unmanned aerial vehicle high precision image analysis platform1.0</param.summary>
+    <param.description>无人机高精度影像分析平台是一款集无人机高精度影像管理、批量进行前景和背景分类以及生态学特征参数的计算与结果输出的图像处理平台。</param.description>
+    <param.screenshot>${PROJECT_ROOT}\splash.png</param.screenshot>
+    <param.guid />
+    <param.installpath.string>\Chinese Academy of Forestry\UAV_HPIAP\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes />
+    <param.intermediate>D:\我的软件\Cimary\for_testing</param.intermediate>
+    <param.files.only>D:\我的软件\Cimary\for_redistribution_files_only</param.files.only>
+    <param.output>D:\我的软件\Cimary\for_redistribution</param.output>
+    <param.logdir>D:\我的软件\Cimary</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.embed.ctf>true</param.embed.ctf>
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>false</param.web.mcr>
+    <param.package.mcr>true</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>MyAppInstaller_web</param.web.mcr.name>
+    <param.package.mcr.name>UAV-HPIAPinstaller</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>true</param.create.log>
+    <param.log.file>UAV-HPIAPlog</param.log.file>
+    <unset>
+      <param.version />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.target.install.notes />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.embed.ctf />
+      <param.target.type />
+      <param.support.packages />
+      <param.no.mcr />
+      <param.web.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\Cimary.m</file>
+    </fileset.main>
+    <fileset.resources />
+    <fileset.package>
+      <file>${PROJECT_ROOT}\林科院院徽.png</file>
+    </fileset.package>
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\Cimary.fig</file>
+      <file>${PROJECT_ROOT}\cmd_rmdir.m</file>
+      <file>${PROJECT_ROOT}\cmd_rmdir_long.m</file>
+      <file>${PROJECT_ROOT}\datacount.m</file>
+      <file>${PROJECT_ROOT}\GUITraining.m</file>
+      <file>${PROJECT_ROOT}\mywaitbar.m</file>
+      <file>${PROJECT_ROOT}\NewParStruct.m</file>
+      <file>${PROJECT_ROOT}\OnOff.m</file>
+      <file>${PROJECT_ROOT}\pic2mat.m</file>
+      <file>${PROJECT_ROOT}\SlicePic.m</file>
+    </fileset.depfun>
+    <build-deliverables>
+      <file location="D:\我的软件\Cimary\for_testing" name="readme.txt" optional="true">D:\我的软件\Cimary\for_testing\readme.txt</file>
+      <file location="D:\我的软件\Cimary\for_testing" name="UAV_HPIAP.exe" optional="false">D:\我的软件\Cimary\for_testing\UAV_HPIAP.exe</file>
+      <file location="D:\我的软件\Cimary\for_testing" name="splash.png" optional="false">D:\我的软件\Cimary\for_testing\splash.png</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2016a</root>
+      <toolboxes>
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabcoder" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="embeddedcoder" />
+      </toolboxes>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>6.2</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
